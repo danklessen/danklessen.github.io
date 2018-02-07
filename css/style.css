@@ -1,0 +1,87 @@
+body {
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    background-color: #636463;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+html {
+    font-size: 10px;
+  font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: 700;
+  color:#fff;
+}
+
+h2 {
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-family: "Helvetica Neue",sans-serif;
+    color: #636463;
+    width: 100%;
+    line-height: 150px;
+    background: white;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: darkgray;
+    font-weight: 400;
+    
+}
+
+#content {
+    width: 100%;
+}
+    
+
+img {
+    width: 180px;
+    height: 180px;
+    display: inline;
+    border-radius: 50%;
+}
+
+#cv a {
+    line-height: 63px;
+    background: #399bc9;
+    margin: 0 15px;
+    padding: 0 70px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    font-family: "helvetica";
+    text-decoration: none;
+}
+
+#cv a:hover {
+    background-color: #55b7e5;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}

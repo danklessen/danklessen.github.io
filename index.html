@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Klessens website</title>
+    <meta name="description" content="En kort beskrivelse af mig">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+
+</head>
+
+<!-- INDHOLD HER -->    
+<body>
+
+            <h1>Om mig</h1>
+    
+<!-- BILLEDE HER -->     
+    <img src="images/portraet-dan-476x476.jpg" alt="Mediegrafiker Dan Klessen">
+
+<!-- BESKRIVELSE HER -->
+    <div id="content">
+        <blockquote>
+            <q>Jeg er 26 år og bosat i Randers sammen med min forlovet. Jeg er uddannet Mediegrafiker med flere års erfaring inden for grafisk design. Jeg opfatter mig selv som en kreativ grafiker, der er passioneret for sit arbejde. Mine primære styrker ligger i, at jeg er ansvarsbevidst, målrette og stædig, også når der opstår udfordringer. Mit valg faldt på MDU, for at få stærkere kunstskaber indenfor den digitale verden, samt medieproduktion.</q>
+        </blockquote>
+        <br/>
+        
+        <p>Min erfaring med kodning er på et øvet niveau</p>
+        
+    <h2>Dan Klessen</h2>
+    
+<!-- INTERESSER HER -->             
+<h3 alt="Mine interesser">Jeg interesserer mig ikke kun for grafik, men også for 
+<span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "musik", "whisky", "træning og ernæring" ]'></span></h3>
+
+<script language="javascript" type="text/javascript">
+  //<![CDATA[
+
+  var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 100) || 1700;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // CSS HER
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+//]]>
+</script>
+
+<!-- KNAP HER --> 
+        <div id="cv" class="a">
+
+            <a href="http://danklessen.dk/wp-content/uploads/2017/11/Dan-Klessen-CV.pdf" title="Hent CV" target="_blank" alt="Hent mit cv">Hent CV</a>
+    
+        </div>
+
+        
+    </div>
+
+
+
+</body>
+
+</html>
