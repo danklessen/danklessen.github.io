@@ -141,7 +141,8 @@ h3 {
     background: white;
     display: inline-block;
     margin-bottom: 30px;
-	padding: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
     font-weight: 200;
 }
 
