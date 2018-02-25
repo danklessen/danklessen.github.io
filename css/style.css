@@ -123,6 +123,8 @@ section .cases {
 
 #content {
 	line-height: 1.5;
+	width: 80%;
+	margin: auto;
 }
 
 h1 {
