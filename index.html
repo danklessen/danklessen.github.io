@@ -7,17 +7,56 @@
     <meta name="description" content="En kort beskrivelse af mig">
     <link rel="stylesheet" href="css/style.css">
 <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-
+    
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
 </head>
 
-<!-- INDHOLD HER -->    
+  
 <body>
+	
+<!-- HEADER HER -->
+<header>
+   <a href="#" class="logo"> <img src="images/logo.png" title="Dan Klessen logo"> </a>
+    <nav class="header-navigation">
+       <ul>
+        <li><a href="#hjem" title="Gå til forsiden">Hjem</a></li>
+		<li><a href="#portfolio" title="Gå til portfolio">Portfolio</a></li>
+		<li><a href="#om-mig" title="Gå til om mig">Om mig</a></li>
+    	</ul>
+    </nav>
+        
+   <h1>Grafiker med <br/>erfaring og <br/>passion</h1>
+	
+	
+	<!-- KNAP HER --> 
+        <div id="cv" class="a">
 
-            <h1>Om mig</h1>
+            <a href="http://danklessen.dk/wp-content/uploads/2017/11/Dan-Klessen-CV.pdf" title="Hent CV" target="_blank" alt="Hent mit cv">Hent CV</a>
+    </div>
+	
+</header>
+	
+<!-- PORTFOLIO HER -->
+	<section id="portfolio">
+	   <h1 class="black">Portfolio</h1>
+		<h2 class="lighter">Udvalgte cases</h2>
+	<img class="cases" src="images/psy-line-logo.jpg" title="Psykomotorisk terapeut Line Andersen" />
+    <img class="cases" src="images/ase.jpg" title="Aggerholm Electrical Service" />
+    <img class="cases" src="images/IV-JP-annonce.jpg" title="Iværk & Vækst JP annonce" />
+	<img class="cases" src="images/peugeotboxer.jpg" title="Punkt GTG bildekoration" />
+	<img class="cases" src="images/vmalfa.jpg" title="Vesthimmerlands Musikhus webdesign" />
+	<img class="cases" src="images/bodycool-logo.jpg" title="Bodycool logo design" />
+		
+	</section>
+
+<!-- OVERSKRIFT HER -->
+<section id="om-mig">
+        <h1>Om mig</h1>
+		<h2 class="lighter-white">Kort biografi</h2>
     
 <!-- BILLEDE HER -->     
-    <img src="images/portraet-dan-476x476.jpg" alt="Mediegrafiker Dan Klessen">
+    <img class="round-image" src="images/portraet-dan-476x476.jpg" title="Mediegrafiker Dan Klessen">
 
 <!-- BESKRIVELSE HER -->
     <div id="content">
@@ -29,13 +68,23 @@
         <p>Min erfaring med kodning er på et øvet niveau</p>
         
     <h2>Dan Klessen</h2>
-    
+    </div>
+	</section>
+	
 <!-- INTERESSER HER -->             
 <h3 alt="Mine interesser">Jeg interesserer mig ikke kun for grafik, men også for 
 <span
      class="txt-rotate"
      data-period="2000"
      data-rotate='[ "musik", "whisky", "træning og ernæring" ]'></span></h3>
+
+
+
+</body>
+
+</html>
+
+<!-- TYPING TEXT -->             
 
 <script language="javascript" type="text/javascript">
   //<![CDATA[
@@ -90,7 +139,7 @@ window.onload = function() {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // CSS HER
+  // STYLING
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
@@ -98,19 +147,3 @@ window.onload = function() {
 };
 //]]>
 </script>
-
-<!-- KNAP HER --> 
-        <div id="cv" class="a">
-
-            <a href="http://danklessen.dk/wp-content/uploads/2017/11/Dan-Klessen-CV.pdf" title="Hent CV" target="_blank" alt="Hent mit cv">Hent CV</a>
-    
-        </div>
-
-        
-    </div>
-
-
-
-</body>
-
-</html>

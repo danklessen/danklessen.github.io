@@ -1,45 +1,147 @@
 body {
     line-height: 26px;
     font-weight: 400;
-    font-family: "Helvetica Neue",sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-weight: lighter;
     color: white;
     background-color: #636463;
     text-align: center;
-    line-height: 1.4;
     letter-spacing: 0.5px;
 }
 
 html {
     font-size: 10px;
-  font-family: sans-serif;
-    -webkit-text-size-adjust: 100%;
+  	font-family: sans-serif;
 }
 
 html, body {
     word-wrap: break-word;
 }
 
-h1 {
-    font-size: 35px;
-    line-height: 38px;
-    font-weight: 700;
-  color:#fff;
+header{
+    background: url(http://danklessen.dk/wp-content/uploads/2017/10/front-page-header.jpg);
+    position: relative;
+    overflow: hidden;
+    min-height: 860px;
+    background-position: center;
+    width: 100%;
 }
 
-h2 {
-    padding-bottom: 25px;
+
+header img {
+    display:inline-block;
+    margin: 25px 0px 0px 200px;
+    max-height: 80px;
+	width: auto;
+	float: left;
+}
+
+
+header h1 {
+    margin: 200px 0 55px 0;
+    line-height: 84px;
+    font-weight: 700;
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Patua One';
+    letter-spacing: 3px;
+	word-wrap: break-word;
+}
+
+
+header .header-navigation {
+	float: right;
+}
+
+header .header-navigation ul {
+	width: 100%;
+	list-style-type: none;
+    margin-top: 50px;
+	margin-right: 200px;
+}
+
+header .header-navigation ul li {
+    margin-right: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+	float: left;
+	font-family: "helvetica";
+	text-align: center;
+	font-weight: lighter;
+	
+}
+
+header .header-navigation ul li a{
+	color: #fff;
+    text-decoration: none;
+}
+
+header .header-navigation ul li a:hover {
+	color: #555;
+    text-decoration: none;
+
+}
+
+section {
+	background-color: white;
+	padding-bottom: 40px;
+}
+
+section .black {
+	color: #636463;
+	padding-top: 40px;
+	margin: 0px 0px -8px 0px;
+	font-family: 'Patua One';
+	letter-spacing: 2px;
+}
+
+section .lighter {
+	font-weight: lighter;
+	font-size: 16px;
+	color: #636463;
+
+}
+
+section .lighter-white {
+	font-weight: lighter;
+	font-size: 16px;
+	color: #fff;
+
+}
+
+section .cases {
+	max-width: 370px;
+	margin: 10px;
+	background-color: white;
+}
+
+#om-mig{
+	background-color:#636463;
+}
+
+#content {
+	line-height: 1.5;
+}
+
+h1 {
+    font-size: 35px;
+	margin: 0px 0px -8px 0px;
+	padding-top: 40px;
+	color:#fff;
+	font-family: 'Patua One';
+	letter-spacing: 2px;
 }
 
 h3 {
     font-family: "Helvetica Neue",sans-serif;
     color: #636463;
     width: 100%;
-    line-height: 150px;
     background: white;
     display: inline-block;
     margin-bottom: 30px;
+	padding: 50px;
     font-weight: 200;
 }
 
@@ -52,16 +154,14 @@ p {
     
 }
 
-#content {
-    width: 100%;
-}
-    
 
-img {
+.round-image {
     width: 180px;
     height: 180px;
     display: inline;
     border-radius: 50%;
+	margin-top: 30px;
+	
 }
 
 #cv a {
@@ -80,8 +180,8 @@ img {
 
 #cv a:hover {
     background-color: #55b7e5;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
 }
